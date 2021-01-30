@@ -1,52 +1,107 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
   <title>Nadias TEST webpage</title>
+
+  <style>
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: #333;
+  background: #efeee7;
+}
+
+header {
+  background: #333;
+}
+
+h1 {
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #eee;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: #d21034;
+}
+
+/* Selecting elements by class */
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* Selecting elements by ID */
+#main-bio,
+#contact-info,
+#bio-image {
+  float: left;
+}
+
+#figure {
+  position: relative;
+}
+
+#bio-name {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+#main-bio {
+  width: 70%;
+}
+
+#contact-info {
+  width: 30%;
+}
+
+#bio-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+  </style>
 </head>
 
 <body>
-
+<header>
 <h1>Nadia Richards TEST page</h1>
-<img src="photo.jpg" alt="My photo" width="500" height="500">
+</header>
 
-<br></br>
-<h3>Something about me</h3>
-  <ol>
-    <li>I live in New York</li>
-    <li>I'm from Russia (the frozen part, close to Alaska)</li>
-    <li>I love data</li>
-  </ol>
-  <br>
-  <h3>Connect with me</h3>
-  <ul>
-    <li><a href="http://instagram.com/nadiarichardsofficial" target="_blank">Instagram</a></li>
-    <li><a href="https://linkedin/in/nadiarichards" target="_blank">LinkedIn</a></li>
-    <li><a href="https://github.com/nadiarichards" target="_blank">GitHub</a></li>
-  </ul>
+<main class="container">
+  <section id="main-bio">
+    <section id="figure">
+      <h2 id="bio-name">Nadia Richards: Short Bio</h2>
+      <img id="bio-image" src="photo.jpg" alt="Nadia Richards" width="200" height="200">
+    </section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum risus ut justo laoreet consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc dui neque, malesuada egestas aliquet ac, commodo in magna. Etiam mollis odio at mi maximus hendrerit. Integer aliquam id lectus nec hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris rhoncus eget nulla in ornare. Maecenas massa nibh, commodo non condimentum eu, congue tempus neque. Donec neque mi, ullamcorper eget fringilla et, iaculis vitae tortor. Curabitur vel nunc vel mi lobortis ornare ut non nulla. Etiam ornare libero ac suscipit aliquam. Nunc venenatis felis sit amet velit vehicula interdum. Vivamus iaculis condimentum nulla vitae dapibus.</p>
+  </section>
 
-  <table border="1", width="100px">
-    <thead>
-        <th colspan="3"><h1>Nadia's Favorites</h1></th>
-    </thead>
-    <tbody>
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Favorites</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-    </tbody>
-      </table>
+  <aside id="contact-info">
+    <h2>Contact Info</h2>
+    <ul>
+      <li><strong>Email:</strong> <a href="nadia.richards.nyc@gmail.com" target="_blank"></a></li>
+      <li><strong>Github:</strong> <a href="https://github.com/nadiarichards" target="_blank"></a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin/in/nadiarichards" target="_blank"></a></li>
+    </ul>
+  </aside>
+</main>
 
 </body>
 
